@@ -5,7 +5,7 @@ A small, accessible, and responsive **Profile Card Component** built using **sem
 This component demonstrates best practices in front-end structure, accessibility, responsiveness, and progressive enhancement — with automated testability through `data-testid` attributes
 
 ## 🚀 Live Demo on Netlify
-(glittering-cendol-19216a.netlify.app)
+(https://glittering-cendol-19216a.netlify.app)
 
 ## 💻 GitHub Repo
 (https://flow1313.github.io/card/profile-card/)
@@ -23,4 +23,5 @@ This component demonstrates best practices in front-end structure, accessibility
 1. Clone the repository:
    ```bash
    git clone https://flow1313.github.io/card/profile-card/
+
 
