@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="contact-validation.js"></script>
+</head>
+<body>
+  <header>
+    <nav aria-label="Main Navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h1>Contact Us</h1>
+      <form id="contactForm" novalidate>
+        <!-- Full Name -->
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" data-testid="test-contact-name" aria-describedby="error-name" required />
+          <span id="error-name" class="error" role="alert" data-testid="test-contact-error-name"></span>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" data-testid="test-contact-email" aria-describedby="error-email" required />
+          <span id="error-email" class="error" role="alert" data-testid="test-contact-error-email"></span>
+        </div>
+
+        <!-- Subject -->
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" data-testid="test-contact-subject" aria-describedby="error-subject" required />
+          <span id="error-subject" class="error" role="alert" data-testid="test-contact-error-subject"></span>
+        </div>
+
+        <!-- Message -->
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" data-testid="test-contact-message" aria-describedby="error-message" required></textarea>
+          <span id="error-message" class="error" role="alert" data-testid="test-contact-error-message"></span>
+        </div>
+
+        <button type="submit" data-testid="test-contact-submit">Submit</button>
+
+        <!-- Success message -->
+        <p id="success-message" class="success" role="status" aria-live="polite" data-testid="test-contact-success"></p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
