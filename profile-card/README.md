@@ -11,17 +11,13 @@ This component demonstrates best practices in front-end structure, accessibility
 (https://flow1313.github.io/card/profile-card/)
 
 ## 🧩 Features
-- Semantic HTML5 structure
-- Responsive design (Flexbox/Grid)
-- Dynamic current time in milliseconds
-- Avatar upload + URL preview
-- Accessible keyboard navigation
-- Social links open in new tabs
 
+### 🧱 General
+- ✅ **Semantic HTML throughout**
+- ✅ **Fully responsive** (mobile, tablet, desktop)
+- ✅ **Keyboard navigable**
+- ✅ **Accessible** (proper labels, alt text, ARIA associations)
+- ✅ **Readable, modular, and consistent code**
 
-## 🧠 How to Run Locally
-1. Clone the repository:
-   ```bash
-   git clone https://flow1313.github.io/card/profile-card/
-
+---
 
