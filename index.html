@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessible Responsive Profile Card</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- ===== Header / Navigation ===== -->
+    <header>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ===== Main Profile Card ===== -->
+    <main>
+      <article data-testid="test-profile-card" class="profile-card">
+        <!-- Avatar Section -->
+        <figure class="profile-avatar">
+          <img
+            src="https://picsum.photos/150"
+            alt="User avatar"
+            data-testid="test-user-avatar"
+            id="avatarImage"
+          />
+          <figcaption class="visually-hidden">User avatar</figcaption>
+
+          <!-- Upload or URL input -->
+          <div class="avatar-inputs">
+            <label for="avatarUrl" class="visually-hidden">Avatar URL</label>
+            <input
+              type="url"
+              id="avatarUrl"
+              placeholder="Paste image URL..."
+              aria-label="Paste avatar URL"
+            />
+            <label for="avatarFile" class="visually-hidden">Upload avatar</label>
+            <input type="file" id="avatarFile" accept="image/*" />
+          </div>
+        </figure>
+
+        <!-- Profile Details -->
+        <div class="profile-content">
+          <header class="profile-header">
+            <h2 data-testid="test-user-name" aria-label="User name">
+              Bello Ibrahim
+            </h2>
+          </header>
+
+          <p data-testid="test-user-bio" class="profile-bio">
+            Frontend Developer building inclusive, accessible, and delightful
+            digital experiences. Passionate about clean code and design systems.
+          </p>
+
+          <p class="profile-time">
+            Current time (ms):
+            <time data-testid="test-user-time" id="currentTime"></time>
+          </p>
+
+          <!-- Social Links -->
+          <nav aria-label="Social links" class="profile-social">
+            <ul data-testid="test-user-social-links">
+              <li>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-twitter"
+                  >Twitter</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-linkedin"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-github"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Hobbies -->
+          <section aria-labelledby="hobbies-heading" class="profile-hobbies">
+            <h3 id="hobbies-heading">Hobbies</h3>
+            <ul data-testid="test-user-hobbies">
+              <li>Football</li>
+              <li>Coding</li>
+              <li>Reading Tech Blogs</li>
+            </ul>
+          </section>
+
+          <!-- Dislikes -->
+          <section aria-labelledby="dislikes-heading" class="profile-dislikes">
+            <h3 id="dislikes-heading">Dislikes</h3>
+            <ul data-testid="test-user-dislikes">
+              <li>Slow Network</li>
+              <li>Idleness</li>
+              <li>Cluttered UI</li>
+            </ul>
+          </section>
+        </div>
+      </article>
+    </main>
+
+    <!-- ===== Footer (optional shared component) ===== -->
+    <footer>
+      <p>&copy; 2025 Bello Ibrahim — <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+    </footer>
+    <script defer src="js/script.js"></script>
+  </body>
+</html>
